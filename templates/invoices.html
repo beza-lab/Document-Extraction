@@ -1,0 +1,25 @@
+<h2>Processed Invoices</h2>
+
+<table border="1">
+
+<tr>
+    <th>ID</th>
+    <th>Vendor</th>
+    <th>Invoice No</th>
+    <th>Date</th>
+    <th>Amount</th>
+</tr>
+
+{% for i in invoices %}
+
+<tr>
+    <td>{{ i.id }}</td>
+    <td>{{ i.vendor }}</td>
+    <td>{{ i.invoice_no }}</td>
+    <td>{{ i.invoice_date }}</td>
+    <td>{{ i.amount }}</td>
+</tr>
+
+{% endfor %}
+
+</table>

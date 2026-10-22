@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document Extract AI</title>
+
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            width: 800px;
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        h1{
+            color: #2c3e50;
+        }
+
+        .btn{
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .btn:hover{
+            background-color: #2980b9;
+        }
+
+        .menu{
+            margin-top:20px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Document Extract AI</h1>
+
+    <form action="/upload"
+          method="POST"
+          enctype="multipart/form-data">
+
+        <p>Select PDF Receipt:</p>
+
+        <input type="file" name="invoice" required>
+
+        <br><br>
+
+        <button class="btn" type="submit">
+            Upload PDF
+        </button>
+
+    </form>
+
+    <div class="menu">
+
+        <a href="/invoices" class="btn">
+            View Invoices
+        </a>
+
+        <a href="/export" class="btn">
+            Export Excel
+        </a>
+
+    </div>
+
+</body>
+</html>
